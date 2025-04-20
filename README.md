@@ -1,7 +1,28 @@
 
 # Product App
 
-## Command Line Arguments
+## Prerequisites
+1. Install [.NET SDK 9.0](https://dotnet.microsoft.com/download/dotnet/9.0) or higher.
+2. Active internet connection is needed to fetch data from the API.
+
+## Steps to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/komalagr/ProductAggregationCodeChallenge
+   cd productApp
+   ```
+
+2. Restore dependencies:
+   ```bash
+   dotnet restore
+   ```
+
+3. Build the project:
+   ```bash
+   dotnet build
+   ```
+
+## Run the project with optional arguments:Command Line Arguments
 
 ### `--fileFormat=` (Optional)
 Specifies the output file format. Valid options are:
