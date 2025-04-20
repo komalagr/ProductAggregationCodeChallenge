@@ -1,0 +1,39 @@
+
+# Ignore bin and obj folders
+productApp/bin/
+productTest/bin/
+productApp/obj/
+productTest/obj/
+
+# Ignore logs
+productApp/logs/
+*.log
+
+# Ignore compiled files
+*.exe
+*.dll
+*.pdb
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.cache
+*.csproj.user
+
+# Ignore IDE-specific files
+.vscode/
+
+# Ignore generated files
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.FileListAbsolute.txt
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# Ignore runtime configuration files
+*.runtimeconfig.json
+*.deps.json
+
