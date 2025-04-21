@@ -19,12 +19,7 @@ namespace productTest
             var jsonFile = File.ReadAllText(@"..\..\..\testData\productsData.json");
             products = JsonConvert.DeserializeObject<List<Product>>(jsonFile)!;
             enrichedProducts = Program.EnrichProducts(products);
-            groupedProducts = enrichedProducts
-            .GroupBy((EnrichedProduct p) => p.category)
-            .ToDictionary(
-            g => g.Key!,
-            g => g.OrderByDescending(p => p.original_price).ToList()
-            );
+            groupedProducts = Program.GroupAndSortProducts(enrichedProducts);
             outputJson = JsonConvert.SerializeObject(groupedProducts, Formatting.Indented);
         }
 
